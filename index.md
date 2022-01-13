@@ -23,3 +23,5 @@ int main() {
 |3|3|6|9|
 
 This is text added on my local machine.
+
+![GitHub-Preview](https://github.com/eNebulas/cse15l-lab-reports/blob/main/index-preview.PNG)
