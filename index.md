@@ -24,7 +24,7 @@ int main() {
 
 This is text added on my local machine.
 
-![index-preview.PNG](https://github.com/eNebulas/cse15l-lab-reports/blob/main/index-preview.png)
+![indexpreview.png](https://github.com/eNebulas/cse15l-lab-reports/blob/main/indexpreview.png)
 
 [Lab Report 1](lab-report-1-week-2.html)
 [Lab Report 1](https://enebulas.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
