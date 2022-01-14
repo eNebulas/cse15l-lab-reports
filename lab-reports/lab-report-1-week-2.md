@@ -21,6 +21,12 @@
 - I have already set a key, so I did not have to type a password in
 
 ## Trying Some Commands
+![Commands](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/commands.png?raw=true)
+- Let's run through the commands seen above
+- `cd ~` and `cd` both bring me to the home directory, in this case I was already in the home directory
+- `ls -lat` lists all files and directories in the current directory, in this case it was the home directory. `ls -l` provides a long listing with various information on the files, `ls -a` shows all files, including hidden ones, and `ls -t` sorts the listing based on the time each file or directory was touched
+- `ls /home/linux/ieng6/cs15lwi22/cs15lwi22ahx` lists everything in my own directory, we cannot access other directories due to permissions
+- Both `cp /home/linux/ieng6/cs15lwi22/public/hello.txt ~/` and `cat /home/linux/ieng6/cs15lwi22/public/hello.txt` do not work due to permission issues as well
 
 ## Moving Files with `scp`
 
