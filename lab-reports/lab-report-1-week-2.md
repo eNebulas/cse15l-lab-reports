@@ -29,6 +29,20 @@
 - Both `cp /home/linux/ieng6/cs15lwi22/public/hello.txt ~/` and `cat /home/linux/ieng6/cs15lwi22/public/hello.txt` do not work due to permission issues as well
 
 ## Moving Files with `scp`
+- First I used a simple code given in lab which tells us what machine we are currently in
+```java
+class WhereAmI {
+    public static void main(String[] args) {
+        System.out.println(System.getProperty("os.name"));
+        System.out.println(System.getProperty("user.name"));
+        System.out.println(System.getProperty("user.home"));
+        System.out.println(System.getProperty("user.dir"));
+    }
+}
+```
+- I first ran it on my local machine, used `scp WhereAmI.java cs15lwi22ahx@ieng6.ucsd.edu:~/` to copy the file into the ieng6 computer, and ran it on the remote machine to get the following
+![scp](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/whereami.png?raw=true)
+- The run on the local machine showed the information of the local machine while the remote run showed the the information of the remote machine
 
 ## Setting an SSH Key
 
