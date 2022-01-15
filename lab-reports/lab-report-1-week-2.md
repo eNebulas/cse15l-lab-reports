@@ -21,6 +21,7 @@
 - I have already set a key, so I did not have to type a password in
 
 ## Trying Some Commands
+
 ![Commands](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/commands.png?raw=true)
 - Let's run through the commands seen above
 - `cd ~` and `cd` both bring me to the home directory, in this case I was already in the home directory
@@ -41,9 +42,19 @@ class WhereAmI {
 }
 ```
 - I first ran it on my local machine, used `scp WhereAmI.java cs15lwi22ahx@ieng6.ucsd.edu:~/` to copy the file into the ieng6 computer, and ran it on the remote machine to get the following
+
 ![scp](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/whereami.png?raw=true)
 - The run on the local machine showed the information of the local machine while the remote run showed the the information of the remote machine
 
 ## Setting an SSH Key
+- First, I used the `ssh-keygen` command and left all the prompts empty as not having a passphrase decreses the time it requires to connect to the ieng6 server
+- Using the `scp` command, I copied the public key generated from the client to the server
+- Now I can `ssh` and `scp` into the remote server without entering my password everytime as seen below
+
+![no-password](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/no-password.png?raw=true)
 
 ## Optimizing Remote Running
+- After copying the `WhereAmI.java` file into the remote server using `scp`, I am able to `ssh` into the server, compile and run `WhereAmI.java` all in one line as seen below
+
+![image](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/no-password-one-line.png?raw=true)
+- Through the lack of a passphrase and combining multiple commands into one line through the use of quotes and semicolons, remote run times can be reduced significantly
