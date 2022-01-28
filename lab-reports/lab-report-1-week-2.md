@@ -58,3 +58,9 @@ class WhereAmI {
 
 ![image](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/no-password-one-line.png?raw=true)
 - Through the lack of a passphrase and combining multiple commands into one line through the use of quotes and semicolons, remote run times can be reduced significantly
+- Now, in our command history, we have the following two commands
+    - `scp WhereAmI.java cs15lwi22ahx@ieng6.ucsd.edu:~/`
+    - `ssh cs15lwi22ahx@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"`
+- To minimize the number of keystrokes to remotely run `WhereAmI.java`, we have a few options, but I believe the following are sufficient.
+    - Assuming that these two commands were the last two done in the terminal, we can simply press `UP_ARROW`, `UP_ARROW`, `ENTER` twice. This works because the two `UP_ARROW` key hits bring us to the `scp` command. After running this, the `ssh` is now two commands back in the history, so we have to click `UP_ARROW` twice again. This gives a total of 6 keystrokes.
+    - With a single click and drag, we can copy any command using `Ctrl + C` and paste it with `Ctrl + V`. After that, we can click `ENTER` to run that command. This is a total of 6 keystrokes and we must do it twice in this case, for a total of 12 keystrokes. However, this is likely the solution that will be mostly used due to the fact that we cannot always guarentee that the command we would like to run is very recent in the command history like we assume in the previous option.
