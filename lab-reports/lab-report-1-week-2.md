@@ -47,7 +47,10 @@ class WhereAmI {
 - The run on the local machine showed the information of the local machine while the remote run showed the the information of the remote machine
 
 ## Setting an SSH Key
+![keygen](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/ssh-keygen.png?raw=true)
 - First, I used the `ssh-keygen` command and left all the prompts empty as not having a passphrase decreses the time it requires to connect to the ieng6 server
+
+![public key copy](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/copy-public-key.PNG?raw=true)
 - Using the `scp` command, I copied the public key generated from the client to the server
 - Now I can `ssh` and `scp` into the remote server without entering my password everytime as seen below
 
