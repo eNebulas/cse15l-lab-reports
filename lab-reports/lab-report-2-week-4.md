@@ -15,4 +15,22 @@ some paragraph text after the links
 - This is the error message that occurred when running with this test case:
 ![infinite-loop](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/error-1-infinite-loop.png?raw=true)
 - We theorized that the reason this occurred is due to the nature of how the `indexOf` method works. We update `currentIndex = closeParen + 1`, but what if `indexOf` returns `-1`, i.e. there are no more close parentheses? Then, `currentIndex = -1 + 1 = 0`, and the loop is now infinite. So, to fix this, we can just add a conditional checking if `closeParen == -1`, then we are done. We also thought that we can just do this for all the variables as if any of them are missing, we do not have a link. That led to the following change:
-![first-code-change](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/first-code-change1.png?raw=true)
+![first-code-change](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/first-code-change2.png?raw=true)
+
+## Second Code Error: Not a Link?
+- The next thing we noticed is that the code picks up some things that it should not. Here is the example:
+
+[test-file5.md](https://github.com/eNebulas/markdown-parse/blob/main/test-file5.md)
+```
+# title
+
+[stuff]
+
+paragraph
+
+(page.com)
+```
+- Here is what gets outputted when running this test:
+![not-a-link](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/error-2-not-a-link.png?raw=true)
+- We theorized that this occurs due to how we add links to our list. A correctly typed link in markdown should have the following: `](`. In other words, the index of the close bracket and the open parenthesis of any link should differ by 1. The following change solves this issue:
+![second-code-change](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/second-code-change.png?raw=true)
