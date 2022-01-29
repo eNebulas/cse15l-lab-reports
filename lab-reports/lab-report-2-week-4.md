@@ -34,3 +34,15 @@ paragraph
 ![not-a-link](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/error-2-not-a-link.png?raw=true)
 - We theorized that this occurs due to how we add links to our list. A correctly typed link in markdown should have the following: `](`. In other words, the index of the close bracket and the open parenthesis of any link should differ by 1. The following change solves this issue:
 ![second-code-change](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/second-code-change.png?raw=true)
+
+## Third Code Error?: Runtime
+- The last change we talked about is the positioning of where we checked the index. The test case that brought this up is this one:
+
+[test-file7.md](https://github.com/eNebulas/markdown-parse/blob/main/test-file7.md)
+```
+)[
+```
+- Here is what gets outputted when running this test:
+![runtime](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/error-3-runtime.png?raw=true)
+- Granted, this is the correct output, but our code runs through the entire loop even though we know beforehand that there is no close bracket anywhere. So, after using `indexOf` for each variable, we can check right then if we can exit the loop. The following commit shows this change:
+![third-code-change](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/third-code-change.png?raw=true)
