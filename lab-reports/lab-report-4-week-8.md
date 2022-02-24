@@ -14,6 +14,7 @@
 
 [`code]`](ucsd.edu)
 ```
+- Expected output: ``[`google.com, google.com, ucsd.edu]``
 
 ## Snippet 2
 ```
@@ -23,6 +24,7 @@
 
 [some escaped \[ brackets \]](example.com)
 ```
+- Expected output: `[a.com, a.com(()), example.com]`
 
 ## Snippet 3
 ```
@@ -51,3 +53,4 @@ And there's still some more text after that.
 
 And then there's more text
 ```
+- Expected output: `[https://ucsd-cse15l-w22.github.io/]`
