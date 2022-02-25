@@ -15,6 +15,15 @@
 [`code]`](ucsd.edu)
 ```
 - Expected output: ``[`google.com, google.com, ucsd.edu]``
+- Test:
+
+![Snippet 1](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/lab-report-4/snippet-1-test.png?raw=true)
+- My Test Result:
+
+![Snippet 1 My Test Result](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/lab-report-4/running-snippet-1-test-my-repo.png?raw=true)
+- Their Test Result:
+
+![Snippet 1 Their Test Result](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/lab-report-4/running-snippet-1-test-their-repo.png?raw=true)
 
 ## Snippet 2
 ```
@@ -25,6 +34,15 @@
 [some escaped \[ brackets \]](example.com)
 ```
 - Expected output: `[a.com, a.com(()), example.com]`
+- Test:
+
+![Snippet 2](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/lab-report-4/snippet-2-test.png?raw=true)
+- My Test Result:
+
+![Snippet 2 My Test Result](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/lab-report-4/running-snippet-2-test-my-repo.png?raw=true)
+- Their Test Result:
+
+![Snippet 2 Their Test Result](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/lab-report-4/running-snippet-2-test-their-repo.png?raw=true)
 
 ## Snippet 3
 ```
@@ -54,3 +72,12 @@ And there's still some more text after that.
 And then there's more text
 ```
 - Expected output: `[https://ucsd-cse15l-w22.github.io/]`
+- Test:
+
+![Snippet 3](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/lab-report-4/snippet-3-test.png?raw=true)
+- My Test Result:
+
+![Snippet 3 My Test Result](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/lab-report-4/running-snippet-3-test-my-repo.png?raw=true)
+- Their Test Result:
+
+![Snippet 3 Their Test Result](https://github.com/eNebulas/cse15l-lab-reports/blob/main/images/lab-report-4/running-snippet-3-test-their-repo.png?raw=true)
